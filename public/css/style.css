@@ -709,6 +709,7 @@ footer {
   }
   table {
     margin: 0 auto;
+    margin-top: -110px;
   }
 }
 
@@ -782,9 +783,7 @@ footer {
   table {
     width: 880px;
   }
-  .tochuc {
-    margin: -110px 0px;
-  }
+
   .vote {
     background-position: top center;
   }
