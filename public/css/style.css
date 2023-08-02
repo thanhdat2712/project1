@@ -24,6 +24,7 @@ body {
   position: relative;
   justify-content: right;
   margin-right: 40px;
+  height: 42px;
 }
 
 .menu-cover {
@@ -32,9 +33,11 @@ body {
 }
 .menu {
   display: flex;
-  padding: 0px 9px;
+  max-width: 1085px;
   justify-content: space-between;
   align-items: center;
+  padding-top: 21px;
+  margin-left: 22px;
 }
 
 .menu .img img {
@@ -43,11 +46,10 @@ body {
 .menu .navbar {
   display: flex;
   position: relative;
-  padding: 0 70px;
 }
 .menu .item {
-  padding: 30px 14px;
-  margin: 10px 10px;
+  padding: 0px 27px;
+  margin: 0px auto;
 }
 .menu .item a {
   font-size: 14px;
@@ -106,30 +108,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.background .background_img {
-  padding: 276px 0px;
-}
-.background .background_img .background_img_text {
-  position: relative;
-}
-.background .background_img .background_img_text img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-46%, -113%);
-}
-.background .background_img .background_img_football {
-  position: relative;
-}
-.background .background_img .background_img_football img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-48%, -14%);
+.background_img {
+  padding-top: 147px;
+  text-align: center;
 }
 .tochuc {
   display: flex;
-  margin: -72px 0px;
+
   align-items: center;
   justify-content: center;
 }
@@ -140,6 +125,8 @@ body {
   text-decoration: underline;
   font-weight: 600;
   font-size: 20px;
+  margin-left: -100px;
+  padding-right: 7px;
 }
 .tochuc .img-bytesoft {
   display: flex;
@@ -176,46 +163,41 @@ body {
 }
 .introduction {
   display: flex;
-  justify-content: space-around;
   position: relative;
-  max-width: 1293px;
-  margin: auto;
-  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
 }
-.introduction .gachcam {
-  position: relative;
-  left: 15px;
-  bottom: -58px;
-}
-.content-left {
-  position: relative;
-  top: -25px;
-  left: 67px;
-}
-.content-text {
-  display: block;
 
-  line-height: 1.8;
+.content-left {
+  margin-top: 22px;
+  margin-left: 159px;
+  line-height: 2;
 }
+
 .content-text p {
   font-size: 14px;
   color: #001649ea;
   font-weight: 800;
-  padding: 21px 14px;
-  word-spacing: 3px;
-  line-height: 1.9;
+  line-height: 28px;
+  margin-left: -24px;
+  padding-top: 15px;
 }
-.content-text h3 {
+.content-title h3 {
   color: #120f3fea;
   font-size: 42px;
   position: relative;
-  left: 38px;
 }
-.content-text h3::after {
+.content-title h3::before {
+  content: url("/public/image/gachcam.png");
+  position: absolute;
+  left: -24px;
+  top: 5px;
+}
+.content-title h3::after {
   content: "";
   position: absolute;
-  left: 44%;
-  top: 29px;
+  right: 24px;
+  top: 34px;
   height: 2px;
   width: 261px;
   background-color: #fc6021;
@@ -223,8 +205,9 @@ body {
 .content-img {
   display: block;
   position: relative;
-  left: 63px;
-  bottom: 101px;
+}
+.content-img img {
+  margin-top: -56px;
 }
 .viewbtn {
   border: oldlace;
@@ -235,7 +218,8 @@ body {
   background-color: rgb(255, 102, 0);
   font-size: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 21px 15px;
+  margin-top: 62px;
+  margin-left: -25px;
 }
 .viewbtn:hover {
   border: 1px solid;
@@ -256,15 +240,11 @@ body {
 .logo-play img {
   border-radius: 90%;
 }
-.content-img > img {
-  position: relative;
-  bottom: -41px;
-  right: 10px;
-}
+
 table {
   border-collapse: collapse;
-  width: 946px;
-  margin: 0 auto;
+  width: 944px;
+  margin: 0 auto 0 293px;
   margin-top: -103px;
   z-index: 3;
   color: rgb(45, 51, 86);
@@ -317,7 +297,7 @@ th {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -126px;
+  margin-top: -69px;
   background-size: cover;
   height: 340px;
 }
@@ -634,8 +614,8 @@ th {
 }
 
 footer {
-  background-image: url(/public/image/Background_footer.png);
-  height: 290px;
+  background-image: url("/public/image/Background_footer.png");
+  padding-top: 19px;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -648,10 +628,11 @@ footer {
   margin: 0 auto;
   padding-top: 118px;
   padding-left: 16px;
+  top: -23px;
 }
 
 .text-company {
-  padding-top: 27px;
+  padding-top: 8px;
 }
 .logo-bvote > hr {
   border: 0;
@@ -662,14 +643,13 @@ footer {
     #fc6021,
     rgba(0, 0, 0, 0)
   );
-  margin: 39px 521px 0px;
+  margin: 19px 512px 52px;
 }
 .text-company > p {
   color: #ffffff;
   font-size: 16px;
   text-align: center;
-  margin-top: -5px;
-  padding: 0px 25px 0px 0px;
+  margin-top: -35px;
 }
 .nav_bars-btn {
   display: none;
@@ -727,6 +707,9 @@ footer {
   .container-bs {
     width: 1170px;
   }
+  table {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -759,7 +742,7 @@ footer {
     padding: 55px 50px;
   }
   .logo-bvote > hr {
-    margin: 39px 450px 0px;
+    margin: 8px 450px 59px;
   }
 }
 @media only screen and (max-width: 1240px) {
@@ -812,7 +795,7 @@ footer {
     margin: 36px 160px;
   }
   .logo-bvote > hr {
-    margin: 39px 350px 0px;
+    margin: 8px 350px 59px;
   }
 }
 @media only screen and (max-width: 1040px) {
@@ -847,7 +830,7 @@ footer {
     width: 200px;
   }
   .logo-bvote > hr {
-    margin: 39px 250px 0px;
+    margin: 8px 250px 59px;
   }
 }
 @media only screen and (max-width: 961px) {
@@ -899,7 +882,7 @@ footer {
     margin-right: auto;
   }
   .logo-bvote > hr {
-    margin: 39px 250px 0px;
+    margin: 8px 250px 59px;
   }
 }
 @media only screen and (max-width: 805px) {
@@ -943,7 +926,7 @@ footer {
     padding: 10px;
   }
   .logo-bvote > hr {
-    margin: 39px 200px 0px;
+    margin: 8px 200px 59px;
   }
 }
 
@@ -964,7 +947,7 @@ footer {
     width: 500px;
   }
   .logo-bvote > hr {
-    margin: 39px 150px 0px;
+    margin: 8px 150px 59px;
   }
   .content-text p {
     padding: 8px;
@@ -994,5 +977,8 @@ footer {
   .content-left {
     width: 350px;
     margin-left: 0;
+  }
+  .image-company {
+    margin: 0 auto;
   }
 }
