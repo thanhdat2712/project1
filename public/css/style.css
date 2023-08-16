@@ -847,6 +847,9 @@ footer {
   .logo-bvote > hr {
     margin: 8px 250px 59px;
   }
+  .vote::after {
+    height: 110px;
+  }
 }
 @media only screen and (max-width: 961px) {
   .nav_bars-btn {
@@ -911,6 +914,9 @@ footer {
     padding: 8px;
     font-size: 12px;
   }
+  .vote::after {
+    height: 100px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .container-bs {
@@ -939,6 +945,9 @@ footer {
   }
   .logo-bvote > hr {
     margin: 8px 200px 59px;
+  }
+  .vote::after {
+    height: 90px;
   }
 }
 
